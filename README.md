@@ -40,68 +40,26 @@ If you have suggestions for improving this theme, please open an issue or submit
 
 ## Deployment
 
-This extension uses GitHub Actions for automated deployment to the Visual Studio Code Marketplace. Here's how to set it up:
+This extension uses GitHub Actions for automated deployment to the Visual Studio Code Marketplace.
 
-### Setting Up Your Repository
+For detailed instructions on how to publish this extension to the VS Code Marketplace, please see the [PUBLISHING.md](PUBLISHING.md) file. It includes step-by-step guidance for:
 
-1. Create a GitHub repository for your extension
-2. Push your code to the repository
-3. Run the setup script to initialize the project:
-   ```bash
-   npm run setup
-   ```
-4. Follow the instructions provided by the setup script
-5. Make sure your `package.json` has the correct publisher ID and repository URL
-
-### Creating a Personal Access Token (PAT)
-
-1. Go to [Azure DevOps](https://dev.azure.com/)
-2. Click on your profile icon in the top right corner
-3. Select "Personal access tokens"
-4. Click "New Token"
-5. Name your token (e.g., "VS Code Marketplace")
-6. Set the organization to "All accessible organizations"
-7. Set the expiration date (1 year is recommended)
-8. Select the "Marketplace" scope and check "Manage"
-9. Click "Create" and copy the generated token
-
-### Configuring GitHub Secrets
-
-1. Go to your GitHub repository
-2. Click on "Settings" > "Secrets and variables" > "Actions"
-3. Click "New repository secret"
-4. Name the secret `VSCE_PAT`
-5. Paste your Personal Access Token as the value
-6. Click "Add secret"
-
-### Triggering Deployment
+1. Creating a publisher account on the VS Code Marketplace
+2. Generating a Personal Access Token (PAT)
+3. Adding the PAT as a GitHub secret
+4. Publishing the extension using GitHub Actions or manually
+5. Troubleshooting common issues
 
 The GitHub Actions workflow is configured to:
-- Build and package the extension on every push to the main branch
+- Build and package the extension on every push to the master branch
 - Publish to the VS Code Marketplace only when a version tag is pushed
 
 To release a new version:
 
-#### Method 1: Using npm scripts (recommended)
 ```bash
-# For a patch version update (e.g., 1.0.0 -> 1.0.1)
+# For a patch version update (e.g., 0.0.1 -> 0.0.2)
 npm run version:patch && npm run deploy
-
-# For a minor version update (e.g., 1.0.0 -> 1.1.0)
-npm run version:minor && npm run deploy
-
-# For a major version update (e.g., 1.0.0 -> 2.0.0)
-npm run version:major && npm run deploy
 ```
-
-#### Method 2: Manual process
-1. Update the version in `package.json`
-2. Commit and push your changes
-3. Create and push a new tag with the format `v*` (e.g., `v1.0.0`)
-   ```bash
-   git tag v1.0.0
-   git push origin v1.0.0
-   ```
 
 This will trigger the workflow to publish your extension to the marketplace and create a GitHub release with the .vsix file attached.
 

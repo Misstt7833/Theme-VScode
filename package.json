@@ -3,7 +3,7 @@
   "displayName": "Eye-Friendly Dark Theme",
   "description": "A dark theme designed to reduce eye strain during long coding sessions",
   "version": "0.0.1",
-  "publisher": "developer",
+  "publisher": "Misstt7833",
   "engines": {
     "vscode": "^1.60.0"
   },
@@ -23,7 +23,6 @@
     "url": "https://github.com/Misstt7833/Theme-VScode.git"
   },
   "license": "MIT",
-  "icon": "images/icon.svg",
   "scripts": {
     "package": "vsce package",
     "publish": "vsce publish",
