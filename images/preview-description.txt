@@ -1,0 +1,24 @@
+# Eye-Friendly Dark Theme Preview
+
+This file describes what the preview image for the Eye-Friendly Dark Theme would look like.
+
+The preview image would show:
+
+1. A VS Code window with the Eye-Friendly Dark Theme applied
+2. Multiple code files open showing different programming languages (JavaScript, Python, HTML/CSS)
+3. The editor would display the warm, muted colors of the theme:
+   - Dark gray background (#1E2021) instead of pure black
+   - Warm-tinted syntax highlighting colors
+   - Reduced contrast between elements
+   - Consistent color harmony with earthy tones
+
+4. The UI elements would show:
+   - Activity bar with the warm dark color (#252729)
+   - Side bar with file explorer (#232527)
+   - Editor tabs with active/inactive states
+   - Status bar at the bottom
+   - Terminal panel open showing the theme colors
+
+This preview would help users visualize how the theme reduces eye strain while maintaining readability and providing a pleasant coding experience for long sessions.
+
+Note: In a real extension, this would be an actual screenshot image (PNG or JPG) showing the theme in action.

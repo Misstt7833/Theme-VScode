@@ -1,0 +1,48 @@
+{
+  "name": "eye-friendly-dark-theme",
+  "displayName": "Eye-Friendly Dark Theme",
+  "description": "A dark theme designed to reduce eye strain during long coding sessions",
+  "version": "0.0.1",
+  "publisher": "developer",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "dark theme",
+    "eye-friendly",
+    "eye strain",
+    "low contrast",
+    "warm colors"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Misstt7833/Theme-VScode.git"
+  },
+  "license": "MIT",
+  "icon": "images/icon.svg",
+  "scripts": {
+    "package": "vsce package",
+    "publish": "vsce publish",
+    "version:patch": "npm version patch",
+    "version:minor": "npm version minor",
+    "version:major": "npm version major",
+    "deploy": "git push && git push --tags",
+    "setup": "node setup.js"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^2.19.0"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Eye-Friendly Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/eye-friendly-dark-color-theme.json"
+      }
+    ]
+  }
+}

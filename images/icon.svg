@@ -1,0 +1,22 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="128" height="128" rx="14" fill="#1E2021"/>
+  
+  <!-- Eye shape -->
+  <ellipse cx="64" cy="64" rx="50" ry="30" fill="none" stroke="#D8D5D1" stroke-width="4"/>
+  
+  <!-- Iris -->
+  <circle cx="64" cy="64" r="20" fill="#A89B8C"/>
+  
+  <!-- Pupil -->
+  <circle cx="64" cy="64" r="10" fill="#232527"/>
+  
+  <!-- Light reflection -->
+  <circle cx="58" cy="58" r="5" fill="#D8D5D1"/>
+  
+  <!-- Warm glow around the eye -->
+  <ellipse cx="64" cy="64" rx="60" ry="40" fill="none" stroke="#B5A99C" stroke-width="2" opacity="0.5"/>
+  
+  <!-- Text indicating "Eye-Friendly" -->
+  <text x="64" y="110" font-family="Arial" font-size="12" fill="#D8D5D1" text-anchor="middle">Eye-Friendly</text>
+</svg>
